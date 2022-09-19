@@ -1,0 +1,31 @@
+{
+  "applications": "*",
+  "changelogDate": "20220919003815",
+  "clientRootFolder": "back",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "matricula",
+  "fields": [],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "back",
+  "name": "Matricula",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "estudiante",
+      "otherEntityRelationshipName": "matricula",
+      "relationshipName": "estudiante",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "curso",
+      "otherEntityRelationshipName": "matricula",
+      "relationshipName": "curso",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

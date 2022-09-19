@@ -1,0 +1,41 @@
+{
+  "applications": "*",
+  "changelogDate": "20220919003812",
+  "clientRootFolder": "back",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "profesor",
+  "fields": [
+    {
+      "fieldName": "nombre",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "apellido",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "correo",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "microserviceName": "back",
+  "name": "Profesor",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "curso",
+      "otherEntityRelationshipName": "profesor",
+      "relationshipName": "curso",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}
