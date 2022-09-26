@@ -1,26 +1,23 @@
 {
   "applications": "*",
-  "changelogDate": "20220919003812",
+  "changelogDate": "20220926025552",
   "clientRootFolder": "back",
   "databaseType": "sql",
-  "dto": "no",
+  "dto": "mapstruct",
   "embedded": false,
   "entityTableName": "profesor",
   "fields": [
     {
-      "fieldName": "nombre",
-      "fieldType": "String",
-      "fieldValidateRules": ["required"]
+      "fieldName": "profesorName",
+      "fieldType": "String"
     },
     {
-      "fieldName": "apellido",
-      "fieldType": "String",
-      "fieldValidateRules": ["required"]
+      "fieldName": "codigoProfesor",
+      "fieldType": "String"
     },
     {
       "fieldName": "correo",
-      "fieldType": "String",
-      "fieldValidateRules": ["required"]
+      "fieldType": "String"
     }
   ],
   "fluentMethods": true,
@@ -29,13 +26,6 @@
   "name": "Profesor",
   "pagination": "no",
   "readOnly": false,
-  "relationships": [
-    {
-      "otherEntityName": "curso",
-      "otherEntityRelationshipName": "profesor",
-      "relationshipName": "curso",
-      "relationshipType": "one-to-many"
-    }
-  ],
-  "service": "no"
+  "relationships": [],
+  "service": "serviceImpl"
 }

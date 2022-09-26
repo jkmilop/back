@@ -1,11 +1,11 @@
-id;nombre;estado
-1;Cantabria Plaza Sección;true
-2;Pizza invoice Azul;false
-3;SSL Gorro;false
-4;convergence Optimización;false
-5;Teclado Niger multi-byte;false
-6;Pequeño Granada;false
-7;maximizada Algodón withdrawal;false
-8;Increible payment;true
-9;Loan;false
-10;Murcia;false
+id;curso_name;tipo_curso
+1;Cantabria Plaza Sección;MAGANA
+2;Pizza invoice Azul;CALCULO
+3;SSL Gorro;CALCULO
+4;convergence Optimización;AVANZADA
+5;Teclado Niger multi-byte;AVANZADA
+6;Pequeño Granada;AVANZADA
+7;maximizada Algodón withdrawal;CALCULO
+8;Increible payment;MAGANA
+9;Loan;CALCULO
+10;Murcia;CALCULO

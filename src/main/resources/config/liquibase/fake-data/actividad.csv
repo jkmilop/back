@@ -1,11 +1,11 @@
-id;nombre;estado
-1;Francia program;true
-2;eyeballs Interno;true
-3;Intranet Lugar;true
-4;Desarrollador Camboya;true
-5;Guapa;true
-6;de;true
-7;Planificador Tanzanian;true
-8;holistic iterate;false
-9;Clonado Ordenador;false
-10;Savings Re-implementado;true
+id;actividad_name;description;fecha_inicio;fecha_fin;formato
+1;Francia program;content sistémica;2022-09-25T07:35:30;2022-09-25T13:21:07;ACTIVIDAD
+2;Castilla-La Puerta invoice;Camboya virtual;2022-09-25T07:20:14;2022-09-25T04:10:24;ACTIVIDAD
+3;Burundi;Card Planificador;2022-09-25T10:53:13;2022-09-25T07:16:11;QUIZ
+4;harness Camiseta Raton;Guapo;2022-09-26T00:46:54;2022-09-25T04:13:41;QUIZ
+5;Savings Re-implementado;invoice secundaria Gerente;2022-09-25T06:05:13;2022-09-25T03:16:01;PARCIAL
+6;transition terciaria Puerta;Account frictionless HTTP;2022-09-25T17:00:51;2022-09-25T23:36:14;PARCIAL
+7;Toallas regional a;Subida metódica;2022-09-25T13:55:23;2022-09-25T19:48:11;ACTIVIDAD
+8;virtual tolerante;Factores calculating;2022-09-25T15:56:07;2022-09-26T01:16:52;PARCIAL
+9;bypass PCI;cultivate Amarillo interactiva;2022-09-26T02:11:56;2022-09-26T00:50:03;PARCIAL
+10;Práctico logística generate;e-tailers;2022-09-25T19:13:40;2022-09-25T16:11:57;ACTIVIDAD

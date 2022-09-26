@@ -71,8 +71,11 @@ class ActividadGatlingTest extends Simulation {
             .post("/services/back/api/actividads")
             .headers(headers_http_authenticated)
             .body(StringBody("""{
-                "nombre":"SAMPLE_TEXT"
-                , "estado":null
+                "actividadName":"SAMPLE_TEXT"
+                , "description":"SAMPLE_TEXT"
+                , "fechaInicio":"2020-01-01T00:00:00.000Z"
+                , "fechaFin":"2020-01-01T00:00:00.000Z"
+                , "formato":"QUIZ"
                 }""")).asJson
             .check(status.is(201))
             .check(headerRegex("Location", "(.*)").saveAs("new_actividad_url"))).exitHereIfFailed
