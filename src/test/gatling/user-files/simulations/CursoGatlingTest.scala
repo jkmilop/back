@@ -71,7 +71,9 @@ class CursoGatlingTest extends Simulation {
             .post("/services/back/api/cursos")
             .headers(headers_http_authenticated)
             .body(StringBody("""{
-                "cursoName":"SAMPLE_TEXT"
+                "nombre":"SAMPLE_TEXT"
+                , "descripcion":"SAMPLE_TEXT"
+                , "estado":null
                 , "tipoCurso":"CALCULO"
                 }""")).asJson
             .check(status.is(201))

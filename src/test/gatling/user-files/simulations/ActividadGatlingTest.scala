@@ -71,10 +71,9 @@ class ActividadGatlingTest extends Simulation {
             .post("/services/back/api/actividads")
             .headers(headers_http_authenticated)
             .body(StringBody("""{
-                "actividadName":"SAMPLE_TEXT"
+                "nombre":"SAMPLE_TEXT"
                 , "description":"SAMPLE_TEXT"
-                , "fechaInicio":"2020-01-01T00:00:00.000Z"
-                , "fechaFin":"2020-01-01T00:00:00.000Z"
+                , "estado":null
                 , "formato":"QUIZ"
                 }""")).asJson
             .check(status.is(201))

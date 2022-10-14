@@ -36,9 +36,6 @@ spring:
     host: localhost
   main:
     allow-bean-definition-overriding: true
-  mvc:
-    pathmatch:
-      matching-strategy: ant_path_matcher
   messages:
     basename: i18n/messages
   task:
@@ -82,7 +79,7 @@ jhipster:
     authentication:
       jwt:
         # This token must be encoded using Base64 (you can type `echo 'secret-key'|base64` on your command line)
-        base64-secret: Nzc4ZDQ2YTFjZTQzMTk3Y2Q2YjU4OWNjNDc2Y2M2Yzg1ODljMTlhMzM4NjE1YzM1MDRmMTMyYmM2ZTE1OTg0ZjZjNTUxZTM4Y2E3N2FkYjVhNGJkYTMwYTk2MWRmZjAxZmJlYWVmZDgwNTRkOWY3MzBjNWZkNzc1YjIzNmIzOGM=
+        base64-secret: Y2NlODgyMGY1MjgwYWIzNGYyNjU4ZmY4NWJlMWRlNGY2NzkyNzY2MjJiOGE5MzE4ZGY3MWFiZDczNzQyNmYyMjQwMDc3ZmRiNTEyNTIwYzU2OTg0YmEyOTBlZjhkNTk5NGIxZjA3OWMxMmJjMTY1ZDY4OTIyOTIyMjE0NTYwODY=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
 

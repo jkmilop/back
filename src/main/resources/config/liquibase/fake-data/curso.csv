@@ -1,11 +1,11 @@
-id;curso_name;tipo_curso
-1;Cantabria Plaza Sección;MAGANA
-2;Pizza invoice Azul;CALCULO
-3;SSL Gorro;CALCULO
-4;convergence Optimización;AVANZADA
-5;Teclado Niger multi-byte;AVANZADA
-6;Pequeño Granada;AVANZADA
-7;maximizada Algodón withdrawal;CALCULO
-8;Increible payment;MAGANA
-9;Loan;CALCULO
-10;Murcia;CALCULO
+id;nombre;descripcion;estado;tipo_curso
+1;Cantabria Plaza Sección;microchip alarm Rústico;false;MAGANA
+2;Normas;Zapatos;true;AVANZADA
+3;Rampa Ladrillo;application Multi Pequeño;true;AVANZADA
+4;functionalities Principado Camiseta;withdrawal Interfaz;false;MAGANA
+5;Murcia Artesanal;Murcia;false;CALCULO
+6;auxiliary;mobile Aruban;true;CALCULO
+7;Investment Comunidad Hormigon;Borders;true;CALCULO
+8;jerarquía Denar;global Centrado Orgánico;false;CALCULO
+9;Granito sensor Fantástico;Argelia Borders;true;CALCULO
+10;Denar;Gris;false;MAGANA

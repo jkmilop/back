@@ -71,8 +71,9 @@ class ProfesorGatlingTest extends Simulation {
             .post("/services/back/api/profesors")
             .headers(headers_http_authenticated)
             .body(StringBody("""{
-                "profesorName":"SAMPLE_TEXT"
-                , "codigoProfesor":"SAMPLE_TEXT"
+                "nombre":"SAMPLE_TEXT"
+                , "apellido":"SAMPLE_TEXT"
+                , "codigo":"SAMPLE_TEXT"
                 , "correo":"SAMPLE_TEXT"
                 }""")).asJson
             .check(status.is(201))

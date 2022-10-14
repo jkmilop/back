@@ -18,7 +18,7 @@ logging:
     ROOT: DEBUG
     tech.jhipster: DEBUG
     org.hibernate.SQL: DEBUG
-    co.edu.usbcali.ingesoft: DEBUG
+    co.usbcali.edu: DEBUG
 
 eureka:
   instance:
@@ -45,24 +45,20 @@ spring:
       profile: dev
       label: main # toggle to switch to a different version of the configuration as stored in git
       # it can be set to any label, branch or commit of the configuration source Git repository
-  datasource:
-    type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:h2:file:./target/h2db/db/back;DB_CLOSE_DELAY=-1;MODE=LEGACY
-    username: back
-    password:
-    hikari:
-      poolName: Hikari
-      auto-commit: false
   h2:
     console:
       # disable spring boot built-in h2-console since we start it manually with correct configuration
       enabled: false
-  jpa:
   liquibase:
     # Remove 'faker' if you do not want the sample data to be loaded automatically
     contexts: dev, faker
+    url: jdbc:h2:file:./target/h2db/db/back;DB_CLOSE_DELAY=-1;MODE=LEGACY
   messages:
     cache-duration: PT1S # 1 second, see the ISO 8601 standard
+  r2dbc:
+    url: r2dbc:h2:file://././target/h2db/db/back;DB_CLOSE_DELAY=-1;MODE=LEGACY
+    username: back
+    password:
   thymeleaf:
     cache: false
   sleuth:
@@ -90,10 +86,6 @@ server:
 # ===================================================================
 
 jhipster:
-  cache: # Cache configuration
-    hazelcast: # Hazelcast distributed cache
-      time-to-live-seconds: 3600
-      backup-count: 1
   registry:
     password: admin
   # CORS is disabled by default on microservices, as you should access them through a gateway.
@@ -109,7 +101,7 @@ jhipster:
     authentication:
       jwt:
         # This token must be encoded using Base64 and be at least 256 bits long (you can type `openssl rand -base64 64` on your command line to generate a 512 bits one)
-        base64-secret: Nzc4ZDQ2YTFjZTQzMTk3Y2Q2YjU4OWNjNDc2Y2M2Yzg1ODljMTlhMzM4NjE1YzM1MDRmMTMyYmM2ZTE1OTg0ZjZjNTUxZTM4Y2E3N2FkYjVhNGJkYTMwYTk2MWRmZjAxZmJlYWVmZDgwNTRkOWY3MzBjNWZkNzc1YjIzNmIzOGM=
+        base64-secret: Y2NlODgyMGY1MjgwYWIzNGYyNjU4ZmY4NWJlMWRlNGY2NzkyNzY2MjJiOGE5MzE4ZGY3MWFiZDczNzQyNmYyMjQwMDc3ZmRiNTEyNTIwYzU2OTg0YmEyOTBlZjhkNTk5NGIxZjA3OWMxMmJjMTY1ZDY4OTIyOTIyMjE0NTYwODY=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
         token-validity-in-seconds-for-remember-me: 2592000

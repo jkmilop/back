@@ -1,23 +1,31 @@
 {
   "applications": "*",
-  "changelogDate": "20220926025550",
+  "changelogDate": "20221014011325",
   "clientRootFolder": "back",
   "databaseType": "sql",
-  "dto": "mapstruct",
+  "dto": "no",
   "embedded": false,
   "entityTableName": "estudiante",
   "fields": [
     {
-      "fieldName": "estudianteName",
-      "fieldType": "String"
+      "fieldName": "nombre",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
     },
     {
-      "fieldName": "codigoEstudiante",
-      "fieldType": "String"
+      "fieldName": "apellido",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "codigo",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
     },
     {
       "fieldName": "correo",
-      "fieldType": "String"
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
     }
   ],
   "fluentMethods": true,
@@ -26,6 +34,19 @@
   "name": "Estudiante",
   "pagination": "no",
   "readOnly": false,
-  "relationships": [],
-  "service": "serviceImpl"
+  "relationships": [
+    {
+      "otherEntityName": "matricula",
+      "otherEntityRelationshipName": "estudiante",
+      "relationshipName": "matricula",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "calificacion",
+      "otherEntityRelationshipName": "estudiante",
+      "relationshipName": "calificacion",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
 }

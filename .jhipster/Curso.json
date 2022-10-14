@@ -1,20 +1,32 @@
 {
   "applications": "*",
-  "changelogDate": "20220926025549",
+  "changelogDate": "20221014011327",
   "clientRootFolder": "back",
   "databaseType": "sql",
-  "dto": "mapstruct",
+  "dto": "no",
   "embedded": false,
   "entityTableName": "curso",
   "fields": [
     {
-      "fieldName": "cursoName",
-      "fieldType": "String"
+      "fieldName": "nombre",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "descripcion",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "estado",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
     },
     {
       "fieldName": "tipoCurso",
       "fieldType": "TipoCurso",
-      "fieldValues": "CALCULO,AVANZADA,MAGANA"
+      "fieldValidateRules": ["required"],
+      "fieldValues": "CALCULO (Calculo),AVANZADA (Avanzada),MAGANA (Magana)"
     }
   ],
   "fluentMethods": true,
@@ -25,10 +37,23 @@
   "readOnly": false,
   "relationships": [
     {
+      "otherEntityName": "actividad",
+      "otherEntityRelationshipName": "curso",
+      "relationshipName": "actividad",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "matricula",
+      "otherEntityRelationshipName": "curso",
+      "relationshipName": "matricula",
+      "relationshipType": "one-to-many"
+    },
+    {
       "otherEntityName": "profesor",
+      "otherEntityRelationshipName": "curso",
       "relationshipName": "profesor",
       "relationshipType": "many-to-one"
     }
   ],
-  "service": "serviceImpl"
+  "service": "serviceClass"
 }

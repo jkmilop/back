@@ -1,11 +1,11 @@
-id;actividad_name;description;fecha_inicio;fecha_fin;formato
-1;Francia program;content sistémica;2022-09-25T07:35:30;2022-09-25T13:21:07;ACTIVIDAD
-2;Castilla-La Puerta invoice;Camboya virtual;2022-09-25T07:20:14;2022-09-25T04:10:24;ACTIVIDAD
-3;Burundi;Card Planificador;2022-09-25T10:53:13;2022-09-25T07:16:11;QUIZ
-4;harness Camiseta Raton;Guapo;2022-09-26T00:46:54;2022-09-25T04:13:41;QUIZ
-5;Savings Re-implementado;invoice secundaria Gerente;2022-09-25T06:05:13;2022-09-25T03:16:01;PARCIAL
-6;transition terciaria Puerta;Account frictionless HTTP;2022-09-25T17:00:51;2022-09-25T23:36:14;PARCIAL
-7;Toallas regional a;Subida metódica;2022-09-25T13:55:23;2022-09-25T19:48:11;ACTIVIDAD
-8;virtual tolerante;Factores calculating;2022-09-25T15:56:07;2022-09-26T01:16:52;PARCIAL
-9;bypass PCI;cultivate Amarillo interactiva;2022-09-26T02:11:56;2022-09-26T00:50:03;PARCIAL
-10;Práctico logística generate;e-tailers;2022-09-25T19:13:40;2022-09-25T16:11:57;ACTIVIDAD
+id;nombre;description;estado;formato
+1;Francia program;content sistémica;true;ACTIVIDAD
+2;Intranet Lugar;invoice Comunidad Asistente;false;PARCIAL
+3;innovative Guantes Card;Murcia compressing harness;false;ACTIVIDAD
+4;Raton Clonado Ordenador;Extremadura;false;QUIZ
+5;Senda generating hacking;Ladrillo 1080p XML;true;QUIZ
+6;array Account;matrices Teclado;true;QUIZ
+7;Bedfordshire datos;web-enabled Bedfordshire;true;ACTIVIDAD
+8;Comunidad;SQL Amarillo;true;ACTIVIDAD
+9;sensor Refinado Loan;copying circuito empower;true;QUIZ
+10;Leone;compress Verde;false;QUIZ

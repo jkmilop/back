@@ -71,8 +71,9 @@ class EstudianteGatlingTest extends Simulation {
             .post("/services/back/api/estudiantes")
             .headers(headers_http_authenticated)
             .body(StringBody("""{
-                "estudianteName":"SAMPLE_TEXT"
-                , "codigoEstudiante":"SAMPLE_TEXT"
+                "nombre":"SAMPLE_TEXT"
+                , "apellido":"SAMPLE_TEXT"
+                , "codigo":"SAMPLE_TEXT"
                 , "correo":"SAMPLE_TEXT"
                 }""")).asJson
             .check(status.is(201))
